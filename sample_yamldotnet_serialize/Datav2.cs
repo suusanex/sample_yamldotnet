@@ -19,10 +19,6 @@ namespace sample_yamldotnet
         public List<string> data2 = new List<string>{"xx", "yy"};
         public Datav2Child child2;
 
-        [YamlMember(Alias = "data1")]
-        public int obsolete_data1 { get; set; }
-        [YamlMember(Alias = "child")]
-        public Datav1Child obsolete_child { get; set; }
 
     }
 }
