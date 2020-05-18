@@ -5,7 +5,7 @@ Code experimenting with several cases of serialization deserialization using Yam
 
 YamlDotNet Ver.6.1.2 + .NET Framework 4.7.2を使用。
 
-変数の追加：デシリアライズ成功。追加された変数は、new時のデフォルト値となった
+変数の追加：デシリアライズ成功。追加された変数は、defaultではなくコンストラクタで代入された値となった
 
 変数の削除：デシリアライズ失敗。同名の変数が必ず存在している必要があるため、不要になった変数であっても、過去バージョンとの互換のために残しておく必要がある。プレフィックスobsolete_を付けた変数名を用意し、YamlMemberのAliasで過去バージョンの名前を指定することで、不要な変数を分かりやすく分類することはできた。
 
